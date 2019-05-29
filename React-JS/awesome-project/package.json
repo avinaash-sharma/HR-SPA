@@ -3,12 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-solid-svg-icons": "^5.8.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "ag-grid-community": "^20.2.0",
+    "ag-grid-enterprise": "^20.2.0",
+    "ag-grid-react": "^20.2.0",
+    "datatables.net": "^1.10.19",
+    "datatables.net-dt": "^1.10.19",
+    "font-awesome": "^4.7.0",
+    "i": "^0.3.6",
     "material-ui": "^0.20.2",
+    "npm": "^6.9.0",
     "react": "^16.8.6",
+    "react-bootstrap-table": "^4.3.1",
     "react-dom": "^16.8.6",
+    "react-native": "^0.59.8",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-tap-event-plugin": "^3.0.3"
   },
   "scripts": {
     "start": "react-scripts start",

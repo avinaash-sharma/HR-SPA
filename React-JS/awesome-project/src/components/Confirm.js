@@ -16,9 +16,12 @@ export class Confirm extends Component {
       e.preventDefault();
       console.log('this is From onClickSubmit');
       // const { valuesRecieved } = this.props;
-      var storeValue={name:this.props.values.firstname,lastName:this.props.values.lastname,
-      eamil:this.props.values.email,phoneno:this.props.values.phoneno,dob:this.props.values.dob,experience:this.props.values.experience};
-      localStorage.setItem('user1',JSON.stringify(storeValue));
+      // var name={name:this.props.values.firstname};
+      
+     
+     var user1={firstname:this.props.values.firstname,lastName:this.props.values.lastName,experience:this.props.values.experience,dob:this.props.values.dob,phoneno:this.props.values.phoneno, eamil:this.props.values.dob};
+      localStorage.setItem('name',JSON.stringify(this.props.values.firstname));
+      localStorage.setItem('user1',JSON.stringify(user1));
       this.props.nextstep();
       // browserHistory.push('/check.html');
     }

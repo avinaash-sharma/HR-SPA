@@ -27,13 +27,17 @@ export class FormUserDetails extends Component {
         <MuiThemeProvider>
             <React.Fragment>
                 <AppBar title="CANDIDATE DETAILS"/><br/><br/>
+                
+                <span style={{padding:'50px'}}>FirstName     :</span>
                 <TextField
                     hintText="Enter FirstName"
                     floatingLabelFixed="First Name"
                     onChange={handlechange('firstname')}
                     defaultValue={values.firstname}
                     
-                /><br/>
+                /> <br/>
+              
+                <span style={{padding:'50px'}}>LastName      :</span>
                    <TextField
                     hintText="Enter LastName"
                     floatingLabelFixed="Last Name"
@@ -41,7 +45,7 @@ export class FormUserDetails extends Component {
                     defaultValue={values.lastname}
                     
                 /><br/>
-                   <TextField
+                <span style={{padding:'50px'}}>E-mail        : </span><TextField
                    
                     hintText="Enter E-mail Id"
                     type="email"
@@ -50,6 +54,7 @@ export class FormUserDetails extends Component {
                     defaultValue={values.email}
                     
                 /><br/>
+                <span style={{padding:'50px'}}>Phone No  :</span>
                    <TextField
                     hintText="Enter Phone Number"
                     floatingLabelFixed="Phone Number"
@@ -57,6 +62,7 @@ export class FormUserDetails extends Component {
                     defaultValue={values.phoneno}
                     
                 /><br/>
+                <span style={{padding:'50px'}}>Date of Birth     :</span>
                    <TextField
                     
                     type="date"
@@ -65,6 +71,7 @@ export class FormUserDetails extends Component {
                     defaultValue= { values.dob}
                     
                 /><br/>
+                <span style={{padding:'50px'}} >Experience:</span>
                    <TextField
                    hintText="Experience In Years"
                     type="number"
@@ -73,15 +80,13 @@ export class FormUserDetails extends Component {
                     defaultValue={values.experience}
                     
                 /><br/>
-                {/* <span>Upload Resume : </span> */}
-                   <input
-                    
-                    type="file"
-                   
+              <span style={{padding:'50px'}}> Upload Resume   :</span><TextField  
+                    type="file" 
                     onChange={handlechange('uploadresume')}
                     defaultValue={values.uploadresume}
                     
                 /><br/>
+               
                 <RaisedButton 
                 label="continue"
                 primary={true}
@@ -107,5 +112,8 @@ const styles={
     button:{
         margin:25
     }
+    
+
+    
 }
 export default FormUserDetails

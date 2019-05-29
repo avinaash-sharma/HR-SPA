@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Signup from './Signup';
 
 class Users extends React.Component{
     render(){
-        return <h1>HelloUsers</h1>
+        return (
+            <Signup />
+        )
     }
 }export default Users

@@ -10,18 +10,20 @@ import Contact from './contact';
 
 const routing=(
     <Router>
-        <div>
-            <ul>
-                <li>
+        <div  >
+            <thead >
+            <div style={{justifyContent:'left',marginLeft:'600%'}}>
+                <th>
                     <Link to="/">Home</Link>
-                </li>
-                <li>
+                </th>
+               <th  style={{padding:'20px'}}>
                     <Link to="/users">Users</Link>
-                </li>
-                <li>
+                </th>
+                <th>
                     <Link to="/contact">Contact</Link>
-                </li>
-            </ul>
+                </th>
+                </div>
+            </thead>
         <Route exact path="/" component={App} />
         <Route path="/users" component={Users} />
         <Route path="/contact" component={Contact} />
