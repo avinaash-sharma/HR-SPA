@@ -46,7 +46,7 @@ self.actionCellRendered.prototype = {
 <a href="#modal-close" title="Close" class="modal-close"  ><i class="far fa-times-circle" style=" margin :30px;padding-top:5px "></i></a></h1>
 
    
-    <form action="index.html" method="POST">
+    <form>
 
     Interviewer Name: <br>
     <input type="text" name="realname"><br>
@@ -92,13 +92,13 @@ self.actionCellRenders.prototype = {
         this.actionsButton.innerHTML = `
 
         <div class="btn-group modal-content " >
-        <a href="#candidatedetails"><i class="fas fa-address-card"></i></a>     
+        action="index.html" method="POST"  <a href="#candidatedetails"><i class="fas fa-address-card"></i></a>     
         <div id="candidatedetails" class="modal-window">  
         <div class="modal-content">
         <a href="#modal-close" title="Close" class="modal-close" ><i class="far fa-times-circle"></i></a>
         <h1>details form</h1>
-        <form action="index.html" method="POST" >
-        Name: <textfield id="name">Abhi</textfield>
+        <form >
+        Name: <textfield id="name"></textfield>
         <br>
         Email: 
         <textfield id="email"></textfield><br>
@@ -110,7 +110,7 @@ self.actionCellRenders.prototype = {
         <text
         Phone Number :
         <input type="text" name="phoneNumber" readonly><br>
-        <button class="btn btn-danger" type="close" value="cancel">cancel</button>
+        // <button class="btn btn-danger" type="close" value="cancel">cancel</button>
         <button class="btn btn-primary" type="submit" value="ok">ok</button>
         </form>
         </div>
